@@ -40,5 +40,5 @@ targets = ["thumbv7em-none-eabihf"]
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.72.1"
+bindgen = "0.73.2"
 doxygen-rs = "0.4.2"

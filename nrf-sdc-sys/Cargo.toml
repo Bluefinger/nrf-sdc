@@ -41,6 +41,6 @@ central = []
 nrf-mpsl-sys = { version = "0.3.0", path = "../nrf-mpsl-sys" }
 
 [build-dependencies]
-bindgen = "0.72.0"
+bindgen = "0.73.2"
 doxygen-rs = "0.4.2"
 winnow = "0.7.12"

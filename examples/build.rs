@@ -22,6 +22,13 @@ fn linker_data() -> &'static [u8] {
     return include_bytes!("memory-nrf54l15.x");
     #[cfg(feature = "nrf54lm20")]
     return include_bytes!("memory-nrf54lm20.x");
+    #[cfg(not(any(
+        feature = "nrf52832",
+        feature = "nrf52840",
+        feature = "nrf54l15",
+        feature = "nrf54lm20"
+    )))]
+    panic!("You must choose one chip feature in order for the examples to work");
 }
 
 fn main() {
